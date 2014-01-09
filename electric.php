@@ -202,9 +202,9 @@
 
   var numberOfSeries = 3;
   var labelcolor = [
-    {label: "Less than 1 kW", color: "#4da74d"},  
-    {label: "1 kW to 3 kW", color: "#edc240"}, 
-    {label: "More than 3 kW", color: "#cb4b4b"}
+    {label: "Less than" + settings.thresholdA + "W", color: "#4da74d"},  
+    {label: settings.thresholdA + "W to " + settings.thresholdB + "W", color: "#edc240"}, 
+    {label: "More than " + settings.thresholdB + "W", color: "#cb4b4b"}
   ];
 
   // Create histogram and piedata from labelcolor descriptor
